@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e4e4e4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(imgs/login\,signup.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        .box {
+            background-color: #0e1a24bd;
+            width: 350px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 30px;
+            margin: 15px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .input-field {
+            height: 40px;
+            border-radius: 10px;
+            padding: 12px;
+            border: solid thin #999;
+            width: calc(100% - 32px);
+            margin-bottom: 20px;
+        }
+
+        .submit-button {
+            padding: 15px;
+            width: 100%;
+            color: white;
+            background-color: #276cb0;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-button:hover {
+            background-color: #34556b;
+        }
+
+        .link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Signup</h2>
+        <form method="post">
+            <input class="input-field" type="text" name="user-name" placeholder="Name"><br><br>
+            <input class="input-field" type="email" name="mail" placeholder="E-mail"><br><br>
+            <input class="input-field" type="password" name="password" placeholder="Password"><br><br>
+            <input class="submit-button" type="submit" value="Signup"><br><br>
+            <p style="color:white;">If you have account</p>
+            <a class="link" href="login tracks.html">Login</a><br><br>
+        </form>
+    </div>
+</body>
+</html>
