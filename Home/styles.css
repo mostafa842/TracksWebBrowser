@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 3px;
+    text-align: center;
+    font-size:large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#logo {
+    float: left;
+    margin-right: 20px;
+}
+
+nav {
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+#tracks,
+#ProgrammingLanguages,
+#community {
+    float: right;
+    margin-left: 20px;
+}
+
+#signUp,
+#about,
+#logIn {
+    float: right;
+    margin-left: 20px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    flex: 1; /* Take remaining space */
+}
+
+#search-box {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+}
+
+.tracks-section,
+.plans-section {
+    text-align: center;
+    flex: 1; /* Take remaining space */
+}
+
+.track-links,
+.plan-links {
+    display: inline-block;
+    text-align: left;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
