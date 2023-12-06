@@ -4,6 +4,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    background-image: url("Photos/Background/1.webp");
 }
 
 header {
@@ -39,7 +40,6 @@ nav a:hover {
 }
 
 #tracks,
-#ProgrammingLanguages,
 #community {
     float: right;
     margin-left: 20px;
@@ -68,21 +68,46 @@ input[type="text"] {
     width: 300px;
 }
 
-.tracks-section,
-.plans-section {
+.tracks-section{
     text-align: center;
     flex: 1; /* Take remaining space */
 }
 
-.track-links,
-.plan-links {
-    display: inline-block;
-    text-align: left;
+.track-links {
+    display: flex;
+    justify-content: space-around;
 }
 
-hr {
-    margin: 20px 0;
+.track-links a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #0a0909;
+    border: 1px solid #0c0c0c;
+    border-radius: 5px;
+    margin: 0 10px;
+    padding: 100px;
+    transition: background-color 0.3s, transform 0.2s;
 }
+
+.track-links a:hover {
+    background-color: #f8f5f5;
+    transform: scale(1.05);
+}
+
+.track-links img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+}
+
+.track-links p {
+    font-size: 16px;
+    margin: 0;
+}
+
+
 
 footer {
     background-color: #333;
@@ -94,3 +119,4 @@ footer {
 footer p {
     margin: 0;
 }
+
