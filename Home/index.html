@@ -1,61 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Programming Page</title>
-    <!-- ... (your existing head content) ... -->
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="scripts.js"/>
+    <title>Document</title>
 </head>
-
 <body>
+    <div id="cursor"></div>
 
-    <header>
-        <div id="logo">
-            <img src="photos/logo/Logo.png" alt="Logo" width="50">
-        </div>
-        <nav>
-            <a href="#tracks">Tracks</a>
-            <a href="#community">Community</a>
-            <a id="about" href="#about">About</a>
-            <a id="signUp" href="file:///D:/Project/TracksWebBrowser/login,%20signup/signup%20tracks.html">Sign Up</a>
-            <a id="logIn" href="file:///D:/Project/TracksWebBrowser/login,%20signup/login%20tracks.html">Log In</a>
-        </nav>
-    </header>
+      
+      <div class="smooth">
+        <div class="header">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Embedded Systems">Embedded Systems</a></li>
+            <li><a href="#Cyber Security">Cyber Security</a></li>
+            <li><a href="#Full Stack">Full Stack</a></li>
+          </ul>
+        </div>      
+        <section id="Home">
+          <div class="search-box">
+            <input type="text" placeholder="Write here..." name="text" class="input">
+            <input type="button" class="button" value="Serach">
+          </div>
 
-    <div id="search-box">
-        <h2>Programming Webpage</h2>
-        <p>This is a paragraph about the programming webpage.</p>
-        <input type="text" placeholder="Search...">
-        <button type="submit">Search</button>
-    </div>
+          <div class="other-websites">
+            <button class="button" id="signupButton">Sign Up</button>                       
+            <button class="button" id="loginButton">Log In</button>                       
+          </div>
 
-    <hr>
-
-    <div class="tracks-section">
-        <h2>Tracks</h2>
-        <div class="track-links">
-            <a href="#cyber security">
-                <img src="photos/Tracks/Cyber Security.png" alt="Track 1" width="300">
-                Cyber Security
-            </a>
-            <a href="#full stack">
-                <img src="photos/Tracks/Full Stack.png" alt="Track 2" width="300">
-                Full Stack
-            </a>
-            <a href="#embedded system">
-                <img src="photos/Tracks/Embedded Systems.png" alt="Track 3" width="300">
-                Embedded Systems
-            </a>
-        </div>
-    </div>
-
-    <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
-    </footer>
-
+        </section>
+        <section id="Embedded Systems"></section>
+        <section id="Cyber Security"></section>
+        <section id="Full Stack"></section>
+      </div>       
 </body>
-
 </html>
+
+  
