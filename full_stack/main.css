@@ -1,0 +1,57 @@
+body {
+  position: relative;
+  margin: 0;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+  background-color: rgb(101, 69, 31);
+
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  font-size: 1rem;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header li {
+  margin: 0 1em;
+  padding: 1em;
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(247, 180, 54);
+}
+
+.header a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 3px;
+  transition: all 0.2s linear;
+}
+
+.header a:hover::after {
+  width: 100%;
+  background-color: rgb(255, 166, 0);
+}
