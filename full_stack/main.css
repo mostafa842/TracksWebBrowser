@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  line-height: 1.5;
+  font-family: cursive;
+  background-color: rgb(101, 69, 31);
+  overflow: hidden; /* Hide horizontal scrollbar */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column; /* Set to column for vertical scrolling */
+  overflow-y: scroll; /* Allow vertical scrolling */
+  height: 100vh; /* Viewport height */
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  flex: 0 0 100%; /* Equal width for each section */
+  scroll-snap-align: start;
+  display: flex;
+  min-height: 100vh;
+}
+
+section:nth-of-type(even) {
+  color: beige;
+  background: rgb(101, 69, 31);
+}
+
+section:nth-of-type(odd) {
+  color: beige;
+  background: rgb(101, 69, 31);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header li {
+  margin: 0 1em;
+  padding: 1em;
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: beige;
+}
+
+.header a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  transition: all 0.2s linear;
+}
+
+.header a:hover::after {
+  width: 100%;
+  background-color: rgb(255, 166, 0);
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+img {
+  width: 50%; /* Default width for images */
+  border-radius: 20px;
+}
+
+img:first-of-type {
+  width: 40%; /* Adjust the width for the first image */
+}
+
+h1,
+
+h1 {
+  font-size: 2.5rem;
+  width: 60%; /* Adjust width as needed */
+  text-align: center;
+  margin: 0px 0px 0px 100px
+}
+
+p {
+  width: 48%;
+  font-size: 1.5rem;
+  text-align: left;
+  border-radius: 10px;
+  border-style: inset;
+  border-right-style: none;
+  border-top-style: none;
+  border-color: rgb(255, 166, 0);
+  margin: 30px 30px 30px 200px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+.slides ul {
+  color: rgb(255, 166, 0);
+  margin-left: 200px;
+  padding-bottom: 0px;
+}
+
+.slides ul li {
+  font-size: 1.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slides ul li a {
+  color: beige;
+  text-decoration: none;
+  background-color: beige;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 166, 0),
+    rgb(255, 166, 0) 50%,
+    beige 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.slides ul li a:before {
+  content: "";
+  background: rgb(255, 166, 0);
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.2s ease-in-out;
+}
+.slides section a:hover {
+  background-position: 0;
+}
+.slides section a:hover::before {
+  width: 90%;
+}
