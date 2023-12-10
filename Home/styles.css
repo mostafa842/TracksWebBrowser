@@ -8,110 +8,13 @@
   ::before,
   ::after {
     box-sizing: border-box;
+
   }
-  
-  body {
+
+  #Home {
     position: relative;
-    margin: 0;
-    overflow: hidden;
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    line-height: 1.5;
-    font-family: "Montserrat", sans-serif;
-    font-size: 62.5%;
-    color: var(--colthr);
-    background-color: var(--coltwo);
   }
 
-
-#Home {
-  position: relative;
-}
-
-.search-box {
-  position: absolute;
-  bottom: 250px;
-  left: 140px;
-}
-
-.search-box input {
-  padding: 10px;
-}
-
-
-.search-button {
-  position: absolute;
-  top: -0px;
-  right: -90px;
-  background-color: #071C42;
-  color: #fff;
-  border: none;
-  padding: 8px;
-  font-size: 14px;
-  cursor: pointer;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  transition: background-color 0.3s;
-  border-radius: 10px;
-  border-style: double;
-  border-color: #472ded;
-}
-
-
-.input {
-  border-radius: 10px;
-  outline: 2px solid #472ded;
-  border: 0;
-  font-family: "fantasy" ;
-  background-color: #fafafa;
-  outline-offset: 3px;
-  padding: 10px ;
-  transition: 0.25s;
-}
-
-.input:focus {
-  outline-offset: 5px;
-  background-color: #fff
-}
-
-
-  #cursor {
-    position: fixed;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-    pointer-events: none;
-  }
-  
-  .scrolls {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 1.25em;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
-    color: var(--colthr);
-  }
-  
-  .smooth {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-  
-    scroll-snap-type: mandatory;
-    scroll-snap-points-y: repeat(100vh);
-    scroll-snap-type: y mandatory;
-  }
-  
   .header {
     position: fixed;
     top: 0;
@@ -164,7 +67,144 @@
   .header a:hover::after {
     width: 100%;
     background-color: var(--colthr);
+  }  
+
+
+  body {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
+    color: var(--colthr);
+    background-color: var(--coltwo);
   }
+
+  #cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  
+  .scrolls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1.25em;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--colthr);
+  }
+  
+  .smooth {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+  }
+
+  .search-box {
+    position: absolute;
+    bottom: 250px;
+    left: 140px;
+  }
+
+  .search-box input {
+    padding: 10px;
+  }
+
+
+  .search-button {
+    position: absolute;
+    top: 0px;
+    right: -90px;
+    background-color: #071C42;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #472ded;
+  }
+
+
+  .input {
+    border-radius: 10px;
+    outline: 2px solid #472ded;
+    border: 0;
+    font-family: "fantasy" ;
+    background-color: #fafafa;
+    outline-offset: 3px;
+    padding: 10px ;
+    transition: 0.25s;
+  }
+
+  .input:focus {
+    outline-offset: 5px;
+    background-color: #fff
+  }
+
+  #login {
+    color: #f5f6f7;
+    position: relative;
+    text-decoration: none;
+    margin-right: 1000px;
+    margin-top: -24.5px;
+    font-weight: 600;
+  }
+
+  #signup {
+    color: #f5f6f7;
+    position: relative;
+    text-decoration: none;
+    margin-right: 1170px;
+    margin-top: 400px;
+    font-weight: 600;
+  }
+
+
+  
+  #signup::before,#login::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+  
+  #signup:hover::before,#login:hover::before  {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
   
   section {
     position: relative;
@@ -195,24 +235,6 @@
     user-select: none;
   }
 
-  .auth-links {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-.auth-links a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: var(--colthr);
-    
-}
-
-.auth-links a:hover {
-    text-decoration: underline;
-}
-
-
 
   section:nth-child(1) {
     background-image: url(Photos/1.png);
@@ -230,64 +252,6 @@
     background-image: url(Photos//2.png);
   }
   
-  #login {
-    color: #f5f6f7;
-    position: relative;
-    text-decoration: none;
-    margin-right: 1000px;
-    margin-top: -24.5px;
-    font-weight: 600;
-  }
-
-  #signup {
-    color: #f5f6f7;
-    position: relative;
-    text-decoration: none;
-    margin-right: 1170px;
-    margin-top: 400px;
-    font-weight: 600;
-  }
-
-
-  
-  #signup::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #ffffff;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
-  
-  #signup:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-
-  #login::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #ffffff;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
-  
-  #login:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
-  }
-
 
   #section1-text {
     color: #f9f9f9;

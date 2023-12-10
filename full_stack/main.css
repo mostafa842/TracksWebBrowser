@@ -109,7 +109,7 @@ h1 {
 }
 
 p {
-  width: 48%;
+  width: 70%;
   font-size: 1.5rem;
   text-align: left;
   border-radius: 10px;
@@ -117,7 +117,7 @@ p {
   border-right-style: none;
   border-top-style: none;
   border-color: rgb(255, 166, 0);
-  margin: 30px 30px 30px 200px;
+  margin: 30px 30px 30px 120px;
   padding-left: 15px;
   padding-bottom: 15px;
 }
