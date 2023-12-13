@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    background-color:#30003B ;
+  }
+/* ================= Nav Bar ================== */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header li {
+  margin: 0 1em;
+  padding: 1em;
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: rgb(17, 204, 245);
+}
+
+.header a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 3px;
+  transition: all 0.2s linear;
+}
+
+.header a:hover::after {
+  width: 100%;
+  background-color: rgb(17, 204, 245);
+}
+
+/* ============================================ */
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  width: 30%;
+
+}
+
+.intro h3 {
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    padding:0px 80px 20px 80px ;
+    border-style: groove;
+    border-color: rgb(0, 183, 255 );
+    border-radius: 200px;
+    border-top-style:hidden ;
+    margin: 60px 100px 60px 100px;
+
+}
+
+/* ================= lines ================== */
+.line1{
+  font-size: xx-large;
+  color: rgb(0, 183, 255 );
+  margin-top:120px ;
+}
+
+.line1 .lline{
+  padding-left: 104px;
+}
+
+.line1 .rline{
+  padding-left: 599px;
+}
+/* ========================================= */
+
+
+/* ================= title center lines ================== */
+
+.title{
+  border-right-style:groove;
+  border-left-style:groove;
+  border-radius: 15px;
+  border-color: rgb(0, 183, 255 );
+  
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  margin-top: -40px;
+  margin-right: 30%;
+  margin-left: 30%;
+  
+  text-align: center;
+  color:white;
+  font-family: system-ui;
+
+}
+/* ======================================================= */
+
+
+/* ========================= road map animation =========================== */
+.roadmap1 ,.roadmap2 ,.roadmap3{
+  margin: 100px 100px 0px 115px;
+  border-radius: 15px;
+  transition-duration: .3s;
+  transition-property: transform;
+}
+.roadmap1:hover , .roadmap2:hover , .roadmap3:hover{
+    transform: scale(1.2);
+  
+}
+/* ======================================================================== */
+
+
+/* ================= road map 1 ================== */
+.roadmap1{
+  width:20%;
+}
+
+.r1{
+  margin-top:50px;
+  margin-left: 220px;
+  font-family: cursive;
+}
+
+.r1 a{
+  text-decoration: none;
+  color: white;
+}
+
+/* ======================================================================== */
+
+
+/* ================= road map 2 ================== */
+.roadmap2{
+  width:17%;
+}
+
+
+.r2{
+  text-align: center;
+  margin-top:-39px;
+  margin-left: 21px;
+  font-family: cursive;
+}
+
+.r2 a{
+  text-decoration: none;
+  color: white;
+}
+/* =============================================== */
+
+
+
+/* ================= road map 3 ================== */
+
+.roadmap3{
+  width:13%;
+}
+
+
+.r3{
+  text-align: right;
+  margin-top:-39px;
+  margin-right: 256px;
+  font-family: cursive;
+}
+
+.r3 a{
+  text-decoration: none;
+  color: white;
+}
+/* ================================================= */
+
+
+/* ========================= articles animation =========================== */ 
+.article1 , .article2 , .article3 ,.article4 {
+  margin: 100px 100px 0px 115px;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.article1:hover, .article2:hover, .article3:hover ,.article4:hover {
+  transform: scale(1.1) rotate(4deg);
+}
+
+
+/* ======================================================================== */
+
+/* ================= article 1 ================== */
+
+.article1{
+  width: 18%;
+}
+
+.a1{
+  margin-top:50px;
+  margin-left: 75px;
+  font-family: cursive;
+}
+.a1 a{
+  text-decoration: none;
+  color: white;
+}
+/* ============================================== */
+
+/* ================= article 2 ================== */
+
+.article2{
+  width: 20%;
+}
+
+.a2{
+  text-align: center;
+  margin-top:-39px;
+  margin-left: 1px;
+  font-family: cursive;
+}
+
+.a2 a{
+  text-decoration: none;
+  color: white;
+}
+/* ============================================== */
+
+/* ================= article 3 ================== */
+
+.article3{
+  width:19%;
+}
+
+
+.a3{
+  text-align: right;
+  margin-top:-39px;
+  margin-right: 132px;
+  font-family: cursive;
+}
+
+.a3 a{
+  text-decoration: none;
+  color: white;
+}
+/* ============================================== */
+
+/* ================= article 4 ================== */
+
+.article4{
+  width: 21%;
+  margin-left: 607px  ;
+}
+
+.a4{
+  text-align: center;
+  margin-top:40px;
+  margin-left: 14px;
+  font-family: cursive;
+}
+
+.a4 a{
+  text-decoration: none;
+  color: white;
+}
+/* ============================================== */
+
+.src1 ,.src2 {
+  margin: 100px 100px 0px 115px;
+  border-radius: 15px;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+.src1:hover, .src2:hover {
+  transform: scale(1.1) rotate(-4deg);
+}
+
+
+.src1 ,.src2{
+  margin: 100px 100px 0px 100px;
+  width: 15%;
+}
+
+.src1{
+  margin-left: 350px;
+}
+
+.s1{
+  margin-top:40px;
+  margin-left: 381px;
+  font-family: cursive;
+}
+
+.s1 a{
+  text-decoration: none;
+  color: white;
+}
+/* ============================================== */
+
+.src2{
+  margin-left: 240px;
+}
+
+.s2{
+  text-align: right;
+  margin-top:-41px;
+  margin-right: 393px;
+  font-family: cursive;
+}
+
+.s2 a{
+  text-decoration: none;
+  color: white;
+}
