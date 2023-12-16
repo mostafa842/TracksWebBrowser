@@ -1,0 +1,173 @@
+body{
+  background-color: #071c42;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+:root {
+  --colone: #312d3c;
+  --coltwo: #1d1e22;
+  --colthr: #f4f4f4;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  min-height: 60px;
+  font-size: 1rem;
+  background-image: linear-gradient(
+    180deg,
+    var(--coltwo),
+    rgba(var(--coltwo), 0.1),
+    transparent
+  );
+  mix-blend-mode: luminosity;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.header li {
+  margin: 0 1em;
+  padding: 1em;
+}
+
+.header a {
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--colthr);
+}
+
+.header a::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  content: '';
+  width: 0;
+  height: 3px;
+  transition: all 0.2s linear;
+}
+
+.header a:hover::after {
+  width: 100%;
+  background-color: var(--colthr);
+}
+h4 {
+    font-family: 'Poppins', sans-serif, 'arial';
+    font-weight: 600;
+    font-size: 3.5rem;
+    color: #f4f4f4;
+    text-align: center;
+    margin: 48.24px 0px 0px 33px;
+}
+
+/* ///// inputs /////*/
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.75em;
+    color: #f4f4f4;
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #f4f4f4;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 650px;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #193466;
+    color: white;
+    border-radius: 4px;
+}
+
+input:focus,
+textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+.send-form input {
+    width: 20%;
+    border-radius: 15px;
+    display: inline-block;
+    background-color: #193466;
+    color: white;
+    font-size: 18px;
+    margin: 0px 0px 0px 285px;
+    padding: 15px 0px 15px 0px;
+}
+
+.send-form input:hover {
+    transform: translateY(1px);
+
+}
+
+
+input[type=checkbox] + label {
+  color: #ccc;
+  font-style: italic;
+} 
+
+input[type=checkbox]:checked + label {
+  color: #f00;
+  font-style: normal;
+}
+

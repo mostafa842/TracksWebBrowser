@@ -1,0 +1,64 @@
+body{
+    background-image: url('./imgs/background1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover ;
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: #000001bd;
+    
+    border-radius: 10px;
+
+    margin-top: 7%;
+    padding: 30px;
+    width: 350px;
+    
+}
+
+h2{
+    color: white;
+    text-align: center;
+}
+.input-field {
+    border-radius: 10px;
+    padding: 12px;
+    border: solid thin #999;
+    width: 92%;
+    
+    margin-bottom: 20px;
+}
+
+.submit-button {
+    background-color: rgb(110 135 166);
+
+    margin-left: 10% ;
+    padding: 15px;
+    width: 80%;
+
+    border: none;
+    border-radius: 10px;
+    color: white;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #34556b;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
